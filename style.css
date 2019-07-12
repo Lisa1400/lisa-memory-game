@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+header{
+    color:#000;
+        background-color: black;
+        opacity: 0.5;
+        height: 80px;
+        position: relative;
+        margin-bottom: 0; 
+}
+
+.gameName{
+        color: #fff;
+        margin-left: 10px;
+        margin-top: 1.5%;
+        float: left;
+        font-size: 2em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    height: 110vh;
+    background-color: darkturquoise;
+}
+
+.box{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    border: 2px solid purple;
+    perspective: 1000px;
+    margin-top:50px;
+}
+
+.card{
+    width: calc(25% - 0.625em);
+    height: calc(33% - 0.625em);
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+}
+
+.card :active{
+    transform: scale(.97);
+    transition: transform .2s;
+}
+
+.card.turn{
+    transform: rotateY(180deg);
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
+
+.front, .back{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    position: absolute;
+    border: 2px solid purple;
+    border-radius: 20%; 
+    background-color: purple;
+    backface-visibility: hidden;
+}
+
+.back{
+    transform: rotateY(180deg);
+}
