@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+let htmlString = `<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,10 +12,10 @@
         </div>
     </header>
 </head>
-<body id="everything">
+<body id="something">
     
   <section class="box">
-      <div class="card" data-name="rainbow" id="rainb">           
+      <div class="card" data-name="rainbow">           
           <img class="back" src="images/rainbow.jpeg"/>
           <img class="front" src="images/front.jpeg"/> 
       </div>
@@ -25,7 +25,7 @@
         <img class="front" src="images/front.jpeg"/>        
         </div>
 
-        <div class="card" data-name="rainbow" id="rainb">
+        <div class="card" data-name="rainbow">
                 <img class="back" src="images/rainbow.jpeg"/>
             <img class="front" src="images/front.jpeg"/>            
         </div>
@@ -77,4 +77,6 @@
            <script src="script.js"></script>
   </section> 
 </body>
-</html>
+</html>`;
+
+module.exports = htmlString;

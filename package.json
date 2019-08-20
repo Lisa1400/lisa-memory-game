@@ -1,0 +1,23 @@
+{
+  "name": "lisa-memory-game",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "test": "jasmine test.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lisa1400/lisa-memory-game.git"
+  },
+  "author": "Lisa Mabe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lisa1400/lisa-memory-game/issues"
+  },
+  "homepage": "https://github.com/Lisa1400/lisa-memory-game#readme",
+  "dependencies": {
+    "jasmine": "^3.4.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}

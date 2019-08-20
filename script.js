@@ -4,7 +4,7 @@ let turnedCard = true;
 let firstCard;
 let secondCard;
 
-function turnCard(){
+ function turnCard(){
     this.classList.toggle('turn');
 
     if(turnedCard){
@@ -54,3 +54,4 @@ function turnBackCards(){
 })();
 
 cards.forEach(card => card.addEventListener('click', turnCard))
+
